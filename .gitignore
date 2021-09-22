@@ -1,0 +1,9 @@
+# python3
+__pycache__/
+
+# database
+*.db
+*.sqlite
+
+# IDE
+.vscode/
