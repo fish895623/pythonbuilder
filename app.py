@@ -87,6 +87,7 @@ class Makefile:
         files = []
         for r, d, f in os.walk("."):
             for file in f:
+                # TODO exclude file, folder
                 files.append(os.path.join(r, file))
 
         return files
