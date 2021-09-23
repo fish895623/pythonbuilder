@@ -93,11 +93,11 @@ class Makefile:
 
 
 if __name__ == "__main__":
-    a = Makefile()
-    for i in a.file_list():
-        a.dict_file_checksum(i)
+    makefile = Makefile()
+    for i in makefile.file_list():
+        makefile.dict_file_checksum(i)
 
-    a.sqlite3_insert_data()
+    makefile.sqlite3_insert_data()
 
-    a.cur.close()
-    a.con.close()
+    makefile.cur.close()
+    makefile.con.close()
